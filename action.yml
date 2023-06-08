@@ -10,6 +10,11 @@ inputs:
   working-directory:
     description: "A working directory from which the command needs to be run."
     required: false
+    
+  shell:
+    description: "Specify shell to be used"
+    required: false
+    default: true
 
 runs:
   using: node16
