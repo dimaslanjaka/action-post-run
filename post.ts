@@ -4,6 +4,7 @@
 
     const run = core.getInput("run");
     const cwd = core.getInput("working-directory");
+    const shell = core.getInput("shell");
 
-    await exec.exec(run, [], { cwd });
+    await exec.exec(run, [], { cwd, shell });
 })();
