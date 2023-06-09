@@ -6,5 +6,5 @@
     const cwd = core.getInput("working-directory");
     const shell = core.getInput("shell");
 
-    await exec.exec(run, [], { cwd, shell });
+    await exec.exec(run, [], { cwd });
 })();
